@@ -73,11 +73,6 @@ p {
   border-radius: 10px;
 }
 
-.button-contact.open {
-  transition-timing-function: ease-out;
-  display: none;
-}
-
 .button-contact::before {
   content: "";
   position: absolute;
@@ -194,16 +189,18 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
   background-color: var(--color-menu);
-  transform: translateY(-100%);
-  transition: transform 0.7s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .menu.open {
-  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .menu a {
@@ -300,7 +297,6 @@ figure {
 }
 
 .footer {
-  margin-bottom: var(--header-height);
   padding: 0.5rem;
   text-align: center;
   color: var(--color-primary);
@@ -359,30 +355,21 @@ figure {
 
   .menu {
     position: static;
+    opacity: 1;
+    pointer-events: auto;
+    width: auto;
     background-color: var(--backgroud-color);
-    transform: translateY(0);
-    transition: transform 0.7s ease;
     flex-direction: row;
-    justify-content: space-around;
   }
 
   .menu a {
-    margin: 0rem 1rem 0.5rem;
-    padding: 0.5rem;
-    text-align: center;
-    position: relative;
-    color: var(--color-primary);
-    font-size: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
+    margin: 0rem 1rem;
+    padding: 0 0.5rem;
+    color: var(--color-third);
   }
 
   .menu a:nth-child(1) {
     margin-left: 10vw;
-  }
-
-  .menu a:hover {
-    color: var(--color-second);
   }
 
   .menu a:hover .menu-text {

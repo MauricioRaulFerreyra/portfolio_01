@@ -31,14 +31,142 @@
   </header>
 
   <main>
-    <section id="home" class="contenido">
-      <h2><span class="color">Mauricio</span> Ferreyra</h2>
-      <p>Hello, I am <span class="color">Web Developer</span></p>
-      <button class="button-contact" type="button" aria-label="takes you to the contact form">Contact</button>
+
+    <section id="home" class="home-container">
+      <article class=" hero-image">
+        <aside class="hero-image-opacity">
+          <div class="hero-image-content">
+            <h2><span class="color">Mauricio</span> Ferreyra</h2>
+            <p>Hello, I am <span class="color">Web Developer</span></p>
+            <button class="button-contact" type="button" aria-label="takes you to the contact form">Contact</button>
+          </div>
+        </aside>
+      </article>
     </section>
-    <section id="about" class="about">
+
+    <section id="about" class="about section container full-lg-screen">
+      <article class="text-lg-right">
+        <aside class="text-center text-lg-right">
+          <h2>Mauricio Raul Ferreyra</h2>
+          <h4>Who I am?</h4>
+        </aside>
+        <p>
+          A passionate about technology. I completed and passed the Full Stack
+          web development course at Coderhouse. I did and finished the SoyHenry
+          bootcamp in which I graduated as Full Stack Web Developer.
+        </p>
+        <p>
+          I am also self-taught, I like to investigate and learn new things. I
+          am Argentine, from Rosario, province of Santa Fe. It motivates me to
+          be constantly evolving and training in new technologies.
+        </p>
+        <p>
+          I like working in groups, I have done several group projects in
+          No-Country.
+        </p>
+        <p>
+          I have great interest in developing my skills in a work environment.
+          Give me the chance to generate new experiences and knowledge.
+        </p>
+        <div class="text-left text-lg-left">
+          <a class="btn" href="assets/e-cv.pdf" target="_blank" rel="noopener">
+            <h5>DOWNLOAD MY CV</h5>
+          </a>
+        </div>
+      </article>
+      <article class="text-center">
+        <img class="gray-scale" src="assets/foto.jpg" alt="FerreyraMauricio" />
+      </article>
+      <article class="abilities">
+        <h2 class="text-center text-lg-left">My Abilities</h2>
+        <div class="progress">
+          <p>
+            <b><i>
+                Frontend Web Development
+              </i></b>
+            <b>70%</b>
+          </p>
+          <progress value="70" min="0" max="100"></progress>
+        </div>
+        <div class="progress">
+          <p>
+            <b><i>Web Design</i></b>
+            <b>70%</b>
+          </p>
+          <progress value="70" min="0" max="100"></progress>
+        </div>
+        <div class="progress">
+          <p>
+            <b><i>WPO</i> y <i>SEO</i></b>
+            <b>50%</b>
+          </p>
+          <progress value="50" min="0" max="100"></progress>
+        </div>
+        <div class="progress">
+          <p>
+            <b><i>Backend Web Development</i></b>
+            <b>60%</b>
+          </p>
+          <progress value="60" min="0" max="100"></progress>
+        </div>
+        <div class="progress">
+          <p>
+            <b><i>Social Media and Content Marketing</i> </b>
+            <b>50%</b>
+          </p>
+          <progress value="50" min="0" max="100"></progress>
+        </div>
+      </article>
     </section>
-    <section id="services"></section>
+
+    <section id="services" class="services bg-gray-image full-lg-screen">
+      <div class=" section bg-gray-image-opacity full-lg-screen">
+        <h2 class="section-title">What do I offer you?</h2>
+        <div class="services-container">
+          <article class="service-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M20,3H4C2.897,3,2,3.897,2,5v14c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2V5C22,3.897,21.103,3,20,3z M4,19V7h16 l0.002,12H4z" />
+              <path
+                d="M9.293 9.293L5.586 13 9.293 16.707 10.707 15.293 8.414 13 10.707 10.707zM14.707 9.293L13.293 10.707 15.586 13 13.293 15.293 14.707 16.707 18.414 13z" />
+            </svg>
+            <h3><i>Web Programming</i></h3>
+            <h4>
+              I develop sites and applications for platforms <i>Web</i>. I help
+              you build your project from start to finish: <i>Frontend</i>,
+              <i>Backend</i> and Database.
+            </h4>
+          </article>
+          <article class="service-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M20,3H7C5.897,3,5,3.897,5,5v2H4C2.897,7,2,7.897,2,9v10c0,1.103,0.897,2,2,2h6c1.103,0,2-0.897,2-2h8c1.103,0,2-0.897,2-2 V5C22,3.897,21.103,3,20,3z M6,9h4l-0.003,9H4V9H6z M12,17V9c0-1.103-0.897-2-2-2H7V5h11v12H12z" />
+            </svg>
+            <h3><i>Web Design</i></h3>
+            <h4>
+              I prototype and mockup your static designs and turn them into
+              amazing sites and optimal responsive <i>web</i>
+              applications and accessible.
+            </h4>
+          </article>
+          <article class="service-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z" />
+              <path
+                d="M11.412,8.586C11.791,8.966,12,9.468,12,10h2c0-1.065-0.416-2.069-1.174-2.828c-1.514-1.512-4.139-1.512-5.652,0 l1.412,1.416C9.346,7.83,10.656,7.832,11.412,8.586z" />
+            </svg>
+            <h3><i>SEO</i></h3>
+            <h4>
+              <i>Search Engine Optimization</i>. I optimize your sites and web
+              applications so that they improve their position in search engines
+              organically.
+            </h4>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="portfolio"></section>
     <section id="contact">
     </section>
@@ -46,7 +174,7 @@
 
   <footer class="footer">
     <small>Site designed by
-      <a href="#home" target="_blank" rel="noopener">
+      <a href="#home" rel="noopener">
         @MauricioRaulFerreya
       </a>
     </small>

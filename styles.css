@@ -422,8 +422,8 @@ progress::-moz-progress-bar {
 }
 
 .section-title {
-  border-top: thin solid var(--color-four);
-  border-bottom: thin solid var(--color-four);
+  border-top: thin solid #d178a0;
+  border-bottom: thin solid #d178a0;
   margin: 2rem auto;
   padding: 0.5rem 1rem;
   width: 70%;
@@ -473,6 +473,10 @@ figure {
   background-color: #0d0d0f;
 }
 
+.footer a {
+  color: #fff;
+}
+
 .header {
   position: fixed;
   left: 0;
@@ -507,7 +511,7 @@ figure {
 
 .service-card svg {
   margin-bottom: 0.25rem;
-  fill: var(--color-four);
+  fill: #d178a0;
 }
 
 

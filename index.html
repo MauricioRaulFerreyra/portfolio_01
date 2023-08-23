@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Practices Portfolio</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet"
     href='https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Roboto:wght@300;400;700;900&display=swap'>
   <link rel="stylesheet" href="styles.css">
@@ -33,6 +36,7 @@
 
   <main>
 
+    <!--  SECCION INICIO  -->
     <section id="home" class="home-container">
       <article class=" hero-image">
         <aside class="hero-image-opacity">
@@ -45,6 +49,7 @@
       </article>
     </section>
 
+    <!--  SECCION SOBRE MI -->
     <section id="about" class="about section container full-lg-screen">
       <article class="text-lg-right">
         <aside class="text-center text-lg-right">
@@ -120,6 +125,7 @@
       </article>
     </section>
 
+    <!--  SECCION SERVICIOS  -->
     <section id="services" class="services bg-gray-image full-lg-screen">
       <div class=" section bg-gray-image-opacity full-lg-screen">
         <h2 class="section-title">What do I offer you?</h2>
@@ -168,6 +174,7 @@
       </div>
     </section>
 
+    <!--  SECCION PORTFOLIO  -->
     <section id="portfolio" class="portfolio">
       <article class="hero-image">
         <aside class="hero-image-opacity">
@@ -234,11 +241,83 @@
       </article>
     </section>
 
-    <section id="contact">
+    <!--  SECCION CONTACTO  -->
+    <section id="contact" class="contact">
+      <div class="contenido-seccion">
+        <h2>CONTACT</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <form class="col contact-form">
+            <input type="text" name="name" placeholder="Enter your name "
+              title="Name only accepts letters and blank spaces" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required />
+            <input type="text" placeholder="Phone number">
+            <input type="email" name="email" placeholder="Enter your email " title="Wrong email"
+              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required />
+            <input type="text" placeholder="Issue" required>
+            <textarea name="comments" cols="50" rows="10" placeholder="Leave me your comments" required></textarea>
+            <div class="contact-form-loader text-center none">
+              <img src=" assets/loader.svg" alt="Sending..." />
+            </div>
+            <button type="submit">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </form>
+          <article id="thank-you" class="modal">
+            <div class="modal-content">
+              <article class="contact-form-response">
+                <h3>
+                  Thank you so much
+                  <br />
+                  for your comments !!
+                </h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z" />
+                  <path
+                    d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z" />
+                  <path
+                    d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z" />
+                </svg>
+              </article>
+            </div>
+          </article>
+          <!-- Mapa -->
+          <div class="col">
+            <img class="map" src="assets/ubicacion.png" alt="location">
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <h5>Pelegrini 6500, Rosario Santa Fe </h5>
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  <h5>Phone Number: +5493416663403</h5>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <h5>Email: mauriciotauro82@gmail.com</h5>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
   </main>
 
   <footer class="footer">
+    <a title="link" href="#home" class="up">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="links">
+      <a title="https://www.facebook.com/" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a title="https://twitter.com/" href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a title="https://www.skype.com/es/" href="#"><i class="fa-brands fa-skype"></i></a>
+      <a title="linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a title="rss" href="#"><i class="fa-solid fa-rss"></i></a>
+    </div>
     <small>Site designed by
       <a href="#home" rel="noopener">
         @MauricioRaulFerreya

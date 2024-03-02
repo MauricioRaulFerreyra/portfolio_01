@@ -161,7 +161,7 @@ p {
 
 .carousel .slide img {
   max-width: 100%;
-  height: auto;
+  height: 40vh;
   border-radius: 12px;
   object-fit: cover;
 }
